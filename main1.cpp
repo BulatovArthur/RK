@@ -18,18 +18,24 @@ int main() {
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
   getline(cin, array);
   length_int = atoi(length.c_str());
-  for (int i = 0; i < array.length(); i++) {
+  for (int i = 0; i < array.length(); i++) 
+  {
     if (array[i] == ' ') counter++;
   }
   if (length_int != (counter + 1))
     cout << " An error has occurred while reading" << endl;
-  else {
-    for (int i = 0; i < (array.length() / 2); i++) {
+  else 
+  {
+    for (int i = 0; i < (array.length() / 2); i++) 
+    {
       swap(array[i], array[(array.length()) - i - 1]);
     }
-    while (true) {
-      for (int i = z; i < array.length(); i++) {
-        if (array[i] == ' ') {
+    while (true) 
+    {
+      for (int i = z; i < array.length(); i++) 
+      {
+        if (array[i] == ' ') 
+        {
           z++;
           break;
         }
