@@ -23,11 +23,6 @@ int main()
   }
   for (m = 0; m < n; m++)
   {
-    if(n != m)
-    {
-      cout << "error" << endl;
-      return 1;
-    }
     cout << a[m] << endl;
   }
   delete [] a;
